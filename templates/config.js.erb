@@ -24,7 +24,7 @@ config = {
             <% if value.is_a?(Hash) -%><%= key %>: {
                 <% value.each do |subkey, subvalue| -%><%= subkey %>: '<%= subvalue %>',
             <% end -%>
-                }
+                },
             <% else -%>
                 <%= key %>: '<%= value %>',
             <% end -%>
